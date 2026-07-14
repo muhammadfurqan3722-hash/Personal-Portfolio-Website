@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Furqan | Senior Developer Portfolio</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Professional developer portfolio of Muhammad Furqan, BS Computer Science graduate. Experienced software and web developer specializing in responsive design, databases, and modern UI/UX.">
+  <meta name="keywords" content="Muhammad Furqan, Software Developer, Website Developer, Computer Science Graduate, Portfolio, Web Design, WordPress Developer, MySQL, PHP, Bootstrap">
+  <meta name="author" content="Muhammad Furqan">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Interactive Background Canvas -->
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <!-- Mouse Position Follow Glowing Gradient -->
+  <div id="mouse-gradient" aria-hidden="true"></div>
+
+  <!-- Custom Cursor Elements -->
+  <div class="custom-cursor-dot" aria-hidden="true"></div>
+  <div class="custom-cursor-outline" aria-hidden="true"></div>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="loader-logo" style="margin-bottom: 20px;">
+      <img src="assets/logo.jpg" alt="Muhammad Furqan Logo" class="loader-logo-img" style="height: 64px; width: auto; object-fit: contain;">
+    </div>
+    <div class="loader-ring" aria-hidden="true">
+      <div class="loader-ring-circle"></div>
+      <div class="loader-percentage">0%</div>
+    </div>
+    <div class="loader-bar-bg" aria-hidden="true">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header class="navbar">
+    <a href="#hero" class="logo">
+      <img src="assets/logo.jpg" alt="Muhammad Furqan Logo" class="logo-img">
+    </a>
+
+    <nav aria-label="Main Navigation">
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience-education" class="nav-link">Journey</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#why-hire-me" class="nav-link">Strengths</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="hamburger" aria-label="Toggle Menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- ==========================================
+       MAIN CONTENT
+       ========================================== -->
+  <main>
+
+    <!-- 1. HERO SECTION -->
+    <section id="hero" class="section hero">
+      <div class="hero-content reveal-hidden">
+        <span class="hero-greeting">Welcome to my universe</span>
+        <h1 class="hero-name">Muhammad Furqan</h1>
+        <div class="hero-title-container">
+          <span class="hero-title"></span>
+          <span class="typed-cursor" aria-hidden="true">|</span>
+        </div>
+        <p class="hero-description">
+          Passionate Computer Science graduate with a strong interest in software development and modern web technologies. I build responsive, user-friendly, and scalable websites that combine creativity with functionality, always aiming to deliver high-quality digital solutions.
+        </p>
+        <div class="hero-buttons">
+          <a href="assets/resume.pdf" download="Muhammad_Furqan_Resume.pdf" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+            <span>Download Resume</span>
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <span>Contact Me</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper reveal-hidden">
+        <div class="profile-glow-ring"></div>
+        <div class="profile-card">
+          <img src="assets/profile.jpg" alt="Muhammad Furqan Profile Portrait">
+        </div>
+        
+        <!-- Floating Tech Icons (Circular Orbit) -->
+        <div class="floating-icon fi-1" title="HTML5" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm15.8 6.2H6.3l.3 3.1h10.4l-.3 3.5-2.7.7-2.7-.7-.2-1.7H8l.3 4.5 3.7 1 3.7-1 .5-5.2H7L6.6 7.4h10.4l.3-1.2z"/></svg>
+        </div>
+        <div class="floating-icon fi-2" title="CSS3" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm15.8 6.2H8.2l.2 2.3h7.2l-.3 3.5-3.3.9-3.3-.9-.2-2H6.5l.3 4.5 5.2 1.4 5.2-1.4.6-6.6H1.5z"/></svg>
+        </div>
+        <div class="floating-icon fi-3" title="JavaScript" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.268c-.153-.855-.964-1.5-2.208-1.585-.306-.026-.615-.026-.922 0-1.132.079-1.697.569-1.936 1.412-.06.223-.086.455-.077.687v3.292c.002.502.411.907.914.905h2.45c.502-.002.907-.411.905-.914v-2.186c.01-.52-.162-1.026-.489-1.428-.152-.186-.356-.319-.59-.387-.015-.02-.03-.041-.047-.061zm-8.805-4.148c-.006-.475-.403-.848-.878-.83l-2.45.093c-.475.018-.848.415-.83.89l.373 9.479c.018.475.415.848.89.83h2.45c.475-.018.848-.415.83-.89l-.385-9.572zm-3.666-.308c.502.002.907-.406.909-.908v-2.45a.91.91 0 0 0-.909-.909H7.113c-.502-.002-.907.406-.909.909v2.45c.002.502.406.907.909.908h2.45z"/></svg>
+        </div>
+        <div class="floating-icon fi-4" title="PHP" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.012 4c-4.42 0-8.012 3.58-8.012 8s3.592 8 8.012 8c4.422 0 8.013-3.58 8.013-8s-3.591-8-8.013-8zm3.228 10.978c-.29.412-.714.618-1.272.618H11.75V17.5h-1.683v-7.854h3.818c.552 0 .973.197 1.264.59.292.395.438.932.438 1.613 0 .736-.149 1.294-.447 1.674-.298.38-.707.575-1.229.585v.053c.45.034.799.214 1.047.542.248.327.373.743.373 1.25 0 .524-.13 1.026-.39 1.426zm-3.228-2.978V10.74h1.706c.322 0 .564.084.726.252.162.168.243.385.243.65 0 .562-.323.843-.97.843H12.01zm0 3.125V13.78h1.836c.334 0 .584.087.75.263.167.176.25.405.25.688 0 .616-.333.924-1 .924H12.01z"/></svg>
+        </div>
+        <div class="floating-icon fi-5" title="Bootstrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm3.327 15.86c0 .762-.232 1.378-.696 1.848-.464.47-1.127.705-1.989.705H8.32V5.597h4.092c.793 0 1.408.204 1.845.613.437.409.656.963.656 1.66 0 .515-.122.955-.365 1.32-.243.365-.603.626-1.08.784v.054c.594.135 1.047.419 1.358.852.311.433.467.986.467 1.66a2.766 2.766 0 0 1-.366 1.32zm-4.327-2.923v3.314h1.408c.348 0 .614-.093.799-.278.185-.185.277-.45.277-.796 0-.348-.09-.611-.271-.788-.181-.177-.449-.266-.805-.266H11v.014zm0-5.114v3.136h1.22c.328 0 .58-.088.756-.263.176-.175.264-.426.264-.753 0-.327-.089-.575-.268-.744-.179-.169-.436-.253-.772-.253H11v.077z"/></svg>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section id="about" class="section">
+      <div class="section-title-wrapper reveal-hidden">
+        <span class="section-subtitle">Discovery</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-info-cards reveal-hidden reveal-left">
+          <div class="glass-card about-card">
+            <div class="about-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+            </div>
+            <div class="about-card-title">Degree</div>
+            <div class="about-card-value">BS Computer Science</div>
+          </div>
+
+          <div class="glass-card about-card">
+            <div class="about-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+            </div>
+            <div class="about-card-title">University</div>
+            <div class="about-card-value">The Islamia University Of Bahawalpur Bahawalnagar Campus</div>
+          </div>
+
+          <div class="glass-card about-card">
+            <div class="about-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            </div>
+            <div class="about-card-title">Graduation Year</div>
+            <div class="about-card-value">2026</div>
+          </div>
+
+          <div class="glass-card about-card">
+            <div class="about-card-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+            </div>
+            <div class="about-card-title">Interest</div>
+            <div class="about-card-value">Software & Web Dev</div>
+          </div>
+        </div>
+
+        <div class="about-text-content reveal-hidden reveal-right">
+          <h3>Fusing Design Aesthetics with Strong Engineering</h3>
+          <p>
+            Hi, I'm <span class="highlight-text">Muhammad Furqan</span>, a Computer Science graduate from <span class="highlight-text">The Islamia University Of Bahawalpur Bahawalnagar Campus</span>. I am passionate about Software Development and Website Development. I enjoy creating modern, responsive, and user-friendly web applications that solve real-world problems. My goal is to continuously improve my skills, build impactful software, and grow as a professional developer.
+          </p>
+          
+          <!-- Animated Stats Counter Grid -->
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number"><span class="counter" data-target="1.5">0</span></div>
+              <div class="stat-label">Years of<br>Experience</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number"><span class="counter" data-target="5">0</span></div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 3. SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="section-title-wrapper reveal-hidden">
+        <span class="section-subtitle">Expertise</span>
+        <h2 class="section-title">My Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming Languages & Technologies -->
+        <div class="glass-card skills-category reveal-hidden reveal-left" style="grid-column: span 2;">
+          <h3 class="skills-category-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            Programming Languages & Technologies
+          </h3>
+          <div class="skills-subgrid">
+            <!-- HTML -->
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #E34F26;"><path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm15.8 6.2H6.3l.3 3.1h10.4l-.3 3.5-2.7.7-2.7-.7-.2-1.7H8l.3 4.5 3.7 1 3.7-1 .5-5.2H7L6.6 7.4h10.4l.3-1.2z"/></svg>
+                <span class="skill-name">HTML</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="95%"></div></div>
+            </div>
+            <!-- CSS -->
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #1572B6;"><path d="M1.5 0h21l-1.9 21.2L12 24l-8.6-2.8L1.5 0zm15.8 6.2H8.2l.2 2.3h7.2l-.3 3.5-3.3.9-3.3-.9-.2-2H6.5l.3 4.5 5.2 1.4 5.2-1.4.6-6.6H1.5z"/></svg>
+                <span class="skill-name">CSS</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="90%"></div></div>
+            </div>
+            <!-- JavaScript -->
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #F7DF1E;"><path d="M0 0h24v24H0V0zm22.034 18.268c-.153-.855-.964-1.5-2.208-1.585-.306-.026-.615-.026-.922 0-1.132.079-1.697.569-1.936 1.412-.06.223-.086.455-.077.687v3.292c.002.502.411.907.914.905h2.45c.502-.002.907-.411.905-.914v-2.186c.01-.52-.162-1.026-.489-1.428-.152-.186-.356-.319-.59-.387-.015-.02-.03-.041-.047-.061zm-8.805-4.148c-.006-.475-.403-.848-.878-.83l-2.45.093c-.475.018-.848.415-.83.89l.373 9.479c.018.475.415.848.89.83h2.45c.475-.018.848-.415.83-.89l-.385-9.572zm-3.666-.308c.502.002.907-.406.909-.908v-2.45a.91.91 0 0 0-.909-.909H7.113c-.502-.002-.907.406-.909.909v2.45c.002.502.406.907.909.908h2.45z"/></svg>
+                <span class="skill-name">JavaScript</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="85%"></div></div>
+            </div>
+            <!-- PHP -->
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #777BB4;"><path d="M12.012 4c-4.42 0-8.012 3.58-8.012 8s3.592 8 8.012 8c4.422 0 8.013-3.58 8.013-8s-3.591-8-8.013-8zm3.228 10.978c-.29.412-.714.618-1.272.618H11.75V17.5h-1.683v-7.854h3.818c.552 0 .973.197 1.264.59.292.395.438.932.438 1.613 0 .736-.149 1.294-.447 1.674-.298.38-.707.575-1.229.585v.053c.45.034.799.214 1.047.542.248.327.373.743.373 1.25 0 .524-.13 1.026-.39 1.426zm-3.228-2.978V10.74h1.706c.322 0 .564.084.726.252.162.168.243.385.243.65 0 .562-.323.843-.97.843H12.01zm0 3.125V13.78h1.836c.334 0 .584.087.75.263.167.176.25.405.25.688 0 .616-.333.924-1 .924H12.01z"/></svg>
+                <span class="skill-name">PHP</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="80%"></div></div>
+            </div>
+            <!-- SQL -->
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #00758F;"><path d="M12 24c-6.627 0-12-2.164-12-4.833V4.833C0 2.164 5.373 0 12 0s12 2.164 12 4.833v14.334C24 21.836 18.627 24 12 24zm0-22c-5.523 0-10 1.642-10 3.667 0 2.025 4.477 3.667 10 3.667s10-1.642 10-3.667C22 3.642 17.523 1.667 12 1.667z"/></svg>
+                <span class="skill-name">SQL</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="85%"></div></div>
+            </div>
+            <!-- Bootstrap -->
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #7952B3;"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm3.327 15.86c0 .762-.232 1.378-.696 1.848-.464.47-1.127.705-1.989.705H8.32V5.597h4.092c.793 0 1.408.204 1.845.613.437.409.656.963.656 1.66 0 .515-.122.955-.365 1.32-.243.365-.603.626-1.08.784v.054c.594.135 1.047.419 1.358.852.311.433.467.986.467 1.66a2.766 2.766 0 0 1-.366 1.32zm-4.327-2.923v3.314h1.408c.348 0 .614-.093.799-.278.185-.185.277-.45.277-.796 0-.348-.09-.611-.271-.788-.181-.177-.449-.266-.805-.266H11v.014zm0-5.114v3.136h1.22c.328 0 .58-.088.756-.263.176-.175.264-.426.264-.753 0-.327-.089-.575-.268-.744-.179-.169-.436-.253-.772-.253H11v.077z"/></svg>
+                <span class="skill-name">Bootstrap</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="90%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="glass-card skills-category reveal-hidden reveal-right">
+          <h3 class="skills-category-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path></svg>
+            Databases
+          </h3>
+          <div class="skills-subgrid">
+            <!-- MySQL -->
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #00758F;"><path d="M12 24c-6.627 0-12-2.164-12-4.833V4.833C0 2.164 5.373 0 12 0s12 2.164 12 4.833v14.334C24 21.836 18.627 24 12 24zm0-22c-5.523 0-10 1.642-10 3.667 0 2.025 4.477 3.667 10 3.667s10-1.642 10-3.667C22 3.642 17.523 1.667 12 1.667z"/></svg>
+                <span class="skill-name">MySQL</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="80%"></div></div>
+            </div>
+            <!-- MongoDB -->
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #47A248;"><path d="M12 .002c-3.9 0-7.07 3.32-7.07 7.42 0 3.23 2.1 6.8 5.73 9.94.39.34.8.67 1.2 1 .32.27.42.5.34.82-.12.48-.37.95-.56 1.43-.07.18-.04.3.15.39.63.3 1.23.6 1.83.92.21.11.36.08.45-.15.42-1.09.87-2.17 1.34-3.26.15-.36.37-.53.77-.66 3-.97 5.17-3.77 5.17-6.8 0-4.1-3.26-7.42-7.45-7.42zM12 14.5c-2.3 0-4.17-1.87-4.17-4.17S9.7 6.16 12 6.16s4.17 1.87 4.17 4.17S14.3 14.5 12 14.5z"/></svg>
+                <span class="skill-name">MongoDB</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="75%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="glass-card skills-category reveal-hidden reveal-left">
+          <h3 class="skills-category-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg>
+            Tools
+          </h3>
+          <div class="skills-subgrid">
+            <!-- Git & GitHub -->
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #F05032;"><path d="M23.3 10.9L13.1.7C12.7.3 12 .3 11.6.7L8.7 3.6l3 3c.3-.1.6-.2.9-.2 1.1 0 2 .9 2 2 0 .3-.1.6-.2.9l3 3c.3-.1.6-.2.9-.2 1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2c0-.3.1-.6.2-.9l-3-3c-.3.1-.6.2-.9.2-1.1 0-2-.9-2-2 0-.3.1-.6.2-.9l-3-3L.7 11.6c-.4.4-.4 1.1 0 1.5l10.2 10.2c.4.4 1.1.4 1.5 0L23.3 13c.4-.4.4-1.1 0-1.5z"/></svg>
+                <span class="skill-name">Git & GitHub</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="90%"></div></div>
+            </div>
+            <!-- Visual Studio Code -->
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #007ACC;"><path d="M23.984 6.808c-.024-.312-.192-.6-.48-.744L14.736.312C14.28-.024 13.632-.096 13.128.12c-.528.24-.864.768-.864 1.344v21.072c0 .576.336 1.104.864 1.344.192.096.384.144.576.144.312 0 .6-.096.864-.264l8.768-5.76c.288-.144.456-.432.48-.744.024-.312-.12-.624-.384-.792L16.2 12.008l7.248-5.408c.264-.168.408-.48.384-.792zM13.92 12.008l-5.64 4.2-3.792-2.832 9.432-1.368z"/></svg>
+                <span class="skill-name">VS Code</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="95%"></div></div>
+            </div>
+            <!-- Visual Studio -->
+            <div class="skill-card">
+              <div class="skill-card-header">
+                <svg viewBox="0 0 24 24" fill="currentColor" style="color: #5C2D91;"><path d="M17.4 0c-.5 0-1 .2-1.3.6L7.8 8.9 3.5 5.5c-.3-.2-.7-.3-1.1-.3-.6 0-1.2.4-1.4 1-.2.5-.1 1.1.3 1.5l3.8 3.3-3.8 3.3c-.4.4-.5 1-.3 1.5.2.6.8 1 1.4 1 .4 0 .8-.1 1.1-.3l4.3-3.4 8.3 8.3c.3.4.8.6 1.3.6.8 0 1.5-.5 1.8-1.2.2-.5.1-1.1-.3-1.5l-8.2-8.2 8.2-8.2c.4-.4.5-1 .3-1.5-.3-.7-1-1.2-1.8-1.2zm-1.8 12l-4.1-4.1 5.9-5.9v10zm-6.1.1l-4.2 4.2-3.2-3.2 7.4-1z"/></svg>
+                <span class="skill-name">VS</span>
+              </div>
+              <div class="skill-bar-bg"><div class="skill-bar-fill" data-percentage="85%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Development Services -->
+        <div class="glass-card skills-category reveal-hidden reveal-right" style="grid-column: span 2;">
+          <h3 class="skills-category-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            Web Development
+          </h3>
+          <div class="web-skills-flex">
+            <span class="web-skill-badge">WordPress Development</span>
+            <span class="web-skill-badge">Custom Theme Development</span>
+            <span class="web-skill-badge">Theme Customization</span>
+            <span class="web-skill-badge">Plugin Development</span>
+            <span class="web-skill-badge">Responsive Website Design</span>
+            <span class="web-skill-badge">Modern Landing Pages</span>
+            <span class="web-skill-badge">Business Websites</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 4. TIMELINE: EDUCATION & EXPERIENCE SECTION -->
+    <section id="experience-education" class="section">
+      <div class="section-title-wrapper reveal-hidden">
+        <span class="section-subtitle">Roadmap</span>
+        <h2 class="section-title">Education & Experience</h2>
+      </div>
+
+      <div class="timeline-section-grid">
+        <!-- Education Timeline -->
+        <div class="reveal-hidden reveal-left">
+          <h3 class="timeline-column-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+            Education
+          </h3>
+          <div class="timeline-container">
+            <!-- Entry 1 -->
+            <div class="timeline-item">
+              <div class="timeline-node" aria-hidden="true"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h4 class="timeline-title">BS Computer Science</h4>
+                    <div class="timeline-institution">The Islamia University Of Bahawalpur Bahawalnagar Campus</div>
+                  </div>
+                  <span class="timeline-period">2022 – 2026</span>
+                </div>
+                <p class="timeline-description">
+                  <strong>Final Year Project:</strong> AI Integrated Online eDoctor / Virtual Clinic System is a platform that enables users to access healthcare services online, manage appointments, and receive intelligent health assistance.
+                </p>
+                <div class="timeline-meta">
+                  <div class="meta-badge" title="Graduation Status">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                    <span>Status: Graduated</span>
+                  </div>
+                  <div class="meta-badge" title="Final CGPA Score">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8 21 12 17 16 21"></polyline></svg>
+                    <span>CGPA: 3.75 / 4.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Entry 2 -->
+            <div class="timeline-item">
+              <div class="timeline-node" aria-hidden="true"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h4 class="timeline-title">Intermediate (ICS)</h4>
+                    <div class="timeline-institution">Superior College</div>
+                  </div>
+                  <span class="timeline-period">2020 – 2022</span>
+                </div>
+                <p class="timeline-description">
+                  Introduced to foundational coding structures, algorithms, information systems, and computer hardware operations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience Timeline -->
+        <div class="reveal-hidden reveal-right">
+          <h3 class="timeline-column-title">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            Professional Experience
+          </h3>
+          <div class="timeline-container">
+            <div class="timeline-item">
+              <div class="timeline-node" aria-hidden="true"></div>
+              <div class="glass-card timeline-card">
+                <div class="timeline-header">
+                  <div>
+                    <h4 class="timeline-title">Software & Website Developer</h4>
+                    <div class="timeline-institution">Freelancer / Independent</div>
+                  </div>
+                  <span class="timeline-period">1.5 Years Active</span>
+                </div>
+                <p class="timeline-description">
+                  Experienced in developing responsive websites, modern web applications, WordPress solutions, UI implementation, front-end development, database integration, and creating clean, user-friendly interfaces.
+                </p>
+                <div class="timeline-meta">
+                  <div class="meta-badge" title="Primary Role Focus">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    <span>Full Stack Development</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 5. PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="section-title-wrapper reveal-hidden">
+        <span class="section-subtitle">Showcase</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="glass-card project-card reveal-hidden reveal-left">
+          <div class="project-image-container">
+            <div class="project-glow-backdrop" aria-hidden="true"></div>
+            <div class="project-icon-placeholder" aria-hidden="true">🛒</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">MySQL</span>
+            </div>
+            <h3 class="project-title">E-Commerce Store & Inventory Management System</h3>
+            <p class="project-desc">
+              Developed a complete e-commerce platform with separate customer and admin panels. Features include Category Management, Inventory Tracking, Order Processing, Secure Authentication, and an Admin Dashboard for monitoring sales and stock levels using HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/muhammadfurqan3722-hash/ecommerce-store-management-system" target="_blank" class="project-link-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://github.com/muhammadfurqan3722-hash/ecommerce-store-management-system" target="_blank" class="project-link-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 (AI Online eDoctor) -->
+        <div class="glass-card project-card reveal-hidden reveal-right">
+          <div class="project-image-container">
+            <div class="project-glow-backdrop" aria-hidden="true"></div>
+            <div class="project-icon-placeholder" aria-hidden="true">🩺</div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">PHP</span>
+              <span class="project-tag">MySQL</span>
+              <span class="project-tag">AI Integration</span>
+            </div>
+            <h3 class="project-title">AI Integrated Online eDoctor / Virtual Clinic System</h3>
+            <p class="project-desc">
+              An AI-powered virtual clinic platform that allows patients to register, book appointments, and consult doctors online. Integrates AI-assisted health guidance for symptom analysis and secure patient-doctor management modules using HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL. (Final Year Project)
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/muhammadfurqan3722-hash/AI-Integrated-Online-eDoctor-Virtual-Clinic-System" target="_blank" class="project-link-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://github.com/muhammadfurqan3722-hash/AI-Integrated-Online-eDoctor-Virtual-Clinic-System" target="_blank" class="project-link-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                <span>Live Demo</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 6. WHY HIRE ME SECTION -->
+    <section id="why-hire-me" class="section">
+      <div class="section-title-wrapper reveal-hidden">
+        <span class="section-subtitle">Values</span>
+        <h2 class="section-title">Why Hire Me</h2>
+      </div>
+
+      <div class="why-hire-grid">
+        <div class="glass-card why-card reveal-hidden">
+          <div class="why-icon" aria-hidden="true">✦</div>
+          <h3 class="why-title">Professional Web Dev</h3>
+          <p class="why-desc">Tailored websites built with architectural stability, optimized performance, and modern technologies.</p>
+        </div>
+        <div class="glass-card why-card reveal-hidden">
+          <div class="why-icon" aria-hidden="true">✦</div>
+          <h3 class="why-title">Responsive Design</h3>
+          <p class="why-desc">Ensuring flawless visual execution and user experience across all smartphone, tablet, and desktop monitors.</p>
+        </div>
+        <div class="glass-card why-card reveal-hidden">
+          <div class="why-icon" aria-hidden="true">✦</div>
+          <h3 class="why-title">Clean Code</h3>
+          <p class="why-desc">Adhering to strict programming guidelines, naming structures, documentation, and logic encapsulation.</p>
+        </div>
+        <div class="glass-card why-card reveal-hidden">
+          <div class="why-icon" aria-hidden="true">✦</div>
+          <h3 class="why-title">Modern UI/UX</h3>
+          <p class="why-desc">Creating gorgeous layouts and micro-interactions that elevate users' emotional attachment to the product.</p>
+        </div>
+        <div class="glass-card why-card reveal-hidden">
+          <div class="why-icon" aria-hidden="true">✦</div>
+          <h3 class="why-title">Fast Performance</h3>
+          <p class="why-desc">Optimizing layout cycles, script execution speed, assets weight, and server load thresholds.</p>
+        </div>
+        <div class="glass-card why-card reveal-hidden">
+          <div class="why-icon" aria-hidden="true">✦</div>
+          <h3 class="why-title">Problem Solving</h3>
+          <p class="why-desc">Deconstructing complex processes into manageable code solutions with clean analytical logic.</p>
+        </div>
+        <div class="glass-card why-card reveal-hidden">
+          <div class="why-icon" aria-hidden="true">✦</div>
+          <h3 class="why-title">Database Integration</h3>
+          <p class="why-desc">Expertise in mapping schemas, structuring indexes, and writing optimized relational and document queries.</p>
+        </div>
+        <div class="glass-card why-card reveal-hidden">
+          <div class="why-icon" aria-hidden="true">✦</div>
+          <h3 class="why-title">WordPress Dev</h3>
+          <p class="why-desc">Skilled in custom themes, templates construction, plugin hooks, actions filters, and core CMS setup.</p>
+        </div>
+        <div class="glass-card why-card reveal-hidden">
+          <div class="why-icon" aria-hidden="true">✦</div>
+          <h3 class="why-title">Continuous Learning</h3>
+          <p class="why-desc">Constantly studying new engineering standards, languages, cloud servers, and system models.</p>
+        </div>
+        <div class="glass-card why-card reveal-hidden">
+          <div class="why-icon" aria-hidden="true">✦</div>
+          <h3 class="why-title">Team Collaboration</h3>
+          <p class="why-desc">Empathetic team member communicating transparently to ensure collective milestones are surpassed.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- 7. CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="section-title-wrapper reveal-hidden">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Methods Column -->
+        <div class="contact-info-column reveal-hidden reveal-left">
+          
+          <!-- Email -->
+          <div class="glass-card contact-method-card">
+            <div class="contact-method-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-method-details">
+              <h4>Email</h4>
+              <p><a href="mailto:muhammadfurqan2804@gmail.com">muhammadfurqan2804@gmail.com</a></p>
+            </div>
+          </div>
+
+          <!-- Phone -->
+          <div class="glass-card contact-method-card">
+            <div class="contact-method-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            </div>
+            <div class="contact-method-details">
+              <h4>Phone</h4>
+              <p><a href="tel:+923117928892">+92 311 7928892</a></p>
+            </div>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="glass-card contact-method-card">
+            <div class="contact-method-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.248 8.477 3.517 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.731-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45 5.519 0 10.01-4.437 10.014-9.896.002-2.645-1.022-5.13-2.885-6.994C16.63 1.83 14.15 .806 11.512.806 5.996.806 1.505 5.244 1.502 10.704c-.002 1.638.435 3.238 1.267 4.654L1.75 21.65l6.397-1.677c-.503-.1-.301-.06-.5-.127zm10.716-6.49c-.287-.144-1.702-.84-1.966-.935-.263-.096-.456-.144-.648.144-.191.288-.742.936-.91 1.127-.167.192-.335.216-.622.072-.288-.144-1.215-.447-2.316-1.43-.856-.764-1.433-1.709-1.6-1.997-.168-.288-.018-.444.125-.587.13-.129.288-.335.432-.503.144-.168.192-.288.288-.48.096-.192.048-.36-.024-.504-.072-.144-.648-1.56-.888-2.136-.234-.564-.473-.488-.648-.497-.167-.008-.36-.01-.552-.01-.192 0-.503.072-.767.36-.263.288-1.006.984-1.006 2.4 0 1.416 1.03 2.784 1.174 2.976.144.192 2.028 3.1 4.913 4.348.686.297 1.222.474 1.639.607.69.219 1.319.19 1.815.115.552-.083 1.702-.696 1.942-1.368.24-.672.24-1.248.168-1.368-.072-.12-.264-.192-.55-.336z"/></svg>
+            </div>
+            <div class="contact-method-details">
+              <h4>WhatsApp</h4>
+              <p><a href="https://wa.me/923117928892" target="_blank">+92 311 7928892</a></p>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div class="glass-card contact-method-card">
+            <div class="contact-method-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </div>
+            <div class="contact-method-details">
+              <h4>Location</h4>
+              <p>Bahawalnagar, Punjab, Pakistan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="glass-card contact-form-card reveal-hidden reveal-right">
+          <form id="contactForm" class="contact-form" action="https://formspree.io/f/mvoywzjo" method="POST">
+            <div class="form-group-row">
+              <div class="form-group">
+                <input type="text" id="name" name="name" class="form-input" placeholder=" " required>
+                <label for="name" class="form-label">Full Name</label>
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" class="form-input" placeholder=" " required>
+                <label for="email" class="form-label">Email Address</label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" class="form-input" placeholder=" " required>
+              <label for="subject" class="form-label">Subject</label>
+            </div>
+
+            <div class="form-group">
+              <textarea id="message" name="message" class="form-input" placeholder=" " required></textarea>
+              <label for="message" class="form-label">Your Message</label>
+            </div>
+
+            <!-- Validation/Status Alert Box -->
+            <div id="formStatus" class="form-status" aria-live="polite"></div>
+
+            <button type="submit" class="btn btn-primary">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="copyright">
+        Copyright &copy; 2026 Muhammad Furqan. All Rights Reserved.
+      </div>
+      
+      <!-- Footer Social Links -->
+      <div class="footer-socials">
+        <a href="https://github.com/muhammadfurqan3722-hash/ecommerce-store-management-system" target="_blank" class="footer-social-link" title="GitHub" aria-label="GitHub Page">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="footer-social-link" title="LinkedIn" aria-label="LinkedIn Page">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="mailto:muhammadfurqan2804@gmail.com" class="footer-social-link" title="Email" aria-label="Send Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+        <a href="https://wa.me/923117928892" target="_blank" class="footer-social-link" title="WhatsApp" aria-label="WhatsApp Chat">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.248 8.477 3.517 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.731-1.456L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45 5.519 0 10.01-4.437 10.014-9.896.002-2.645-1.022-5.13-2.885-6.994C16.63 1.83 14.15 .806 11.512.806 5.996.806 1.505 5.244 1.502 10.704c-.002 1.638.435 3.238 1.267 4.654L1.75 21.65l6.397-1.677c-.503-.1-.301-.06-.5-.127zm10.716-6.49c-.287-.144-1.702-.84-1.966-.935-.263-.096-.456-.144-.648.144-.191.288-.742.936-.91 1.127-.167.192-.335.216-.622.072-.288-.144-1.215-.447-2.316-1.43-.856-.764-1.433-1.709-1.6-1.997-.168-.288-.018-.444.125-.587.13-.129.288-.335.432-.503.144-.168.192-.288.288-.48.096-.192.048-.36-.024-.504-.072-.144-.648-1.56-.888-2.136-.234-.564-.473-.488-.648-.497-.167-.008-.36-.01-.552-.01-.192 0-.503.072-.767.36-.263.288-1.006.984-1.006 2.4 0 1.416 1.03 2.784 1.174 2.976.144.192 2.028 3.1 4.913 4.348.686.297 1.222.474 1.639.607.69.219 1.319.19 1.815.115.552-.083 1.702-.696 1.942-1.368.24-.672.24-1.248.168-1.368-.072-.12-.264-.192-.55-.336z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Back to top button element -->
+    <a href="#hero" class="back-to-top" title="Scroll back to top" aria-label="Scroll back to top">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+    </a>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
